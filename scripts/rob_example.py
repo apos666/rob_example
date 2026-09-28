@@ -31,6 +31,13 @@ def publisher():
 
         # 按照 10 Hz 休眠
         rate.sleep()
+    
+    # 退出前连续发几次零速度，确保机器人收到停止信号
+    stop = Twist()
+    for _ in range(5):
+        pub.publish(stop)
+        rospy.sleep(0.05)
+    rospy.loginfo("Stopped robot.")
 
 if __name__ == '__main__':
     try:
