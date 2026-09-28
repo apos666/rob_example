@@ -1,0 +1,18 @@
+<?xml version="1.0"?>
+<package format="3">
+  <name>rob_example</name>
+  <version>0.0.0</version>
+  <description>A ROS 1 (Noetic) publisher that sends geometry_msgs/Twist to /cmd_vel.</description>
+
+  <maintainer email="yanhaoming.apos@gmail.com">apos666</maintainer>
+
+  <license>MIT</license>
+
+  <buildtool_depend>catkin</buildtool_depend>
+
+  <build_depend>rospy</build_depend>
+  <build_depend>geometry_msgs</build_depend>
+
+  <exec_depend>rospy</exec_depend>
+  <exec_depend>geometry_msgs</exec_depend>
+</package>
